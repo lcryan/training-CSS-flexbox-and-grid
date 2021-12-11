@@ -1,0 +1,74 @@
+.container {
+    display: grid;
+    background-color: hsl(212, 36%, 90%);
+    color: whitesmoke;
+    font-family: 'Roboto Slab', Arial, serif;
+    grid-gap: 10px;
+    grid-template-rows: 128px 128px 128px 128px 128px 128px 128px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    ". . . aside-1"
+    "aside-2 aside-2 aside-3 ."
+    "aside-2 aside-2 aside-4 aside-5"
+    ". . . ."
+    ". aside-6 aside-7 aside-7"
+    "aside-8 aside-9 aside-7 aside-7"
+    "aside-10 . . .";
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#aside-1 {
+    grid-area: aside-1;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-2 {
+    grid-area: aside-2;
+    background-color: hsl(208, 48%, 47%);
+}
+
+#aside-3 {
+    grid-area: aside-3;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-4 {
+    grid-area: aside-4;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-5 {
+    grid-area: aside-5;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-6 {
+    grid-area: aside-6;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-7 {
+    grid-area: aside-7;
+    background-color: hsl(208, 48%, 47%) ;
+}
+
+#aside-8 {
+    grid-area: aside-8;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-9 {
+    grid-area: aside-9;
+    background-color: hsl(212, 43%, 65%);
+}
+
+#aside-10 {
+    grid-area: aside-10;
+    background-color: hsl(212, 43%, 65%);
+}
